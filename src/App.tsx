@@ -1,27 +1,33 @@
 import React from 'react';
 import './App.scss';
-
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
+import { Card } from './components';
+import data from './api/data.json';
+import next from './icons/next.svg';
+import back from './icons/back.svg';
 
 export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
+    <div className="catalog">
+      <div className="box-back">
+        <img
+          src={`${back}`}
+          className="back"
+          alt="back"
+        />
+      </div>
+      <div className="box-next">
+        <img
+          src={`${next}`}
+          className="next"
+          alt="next"
+        />
+      </div>
+      <Card pictures={data} />
+      <img
+        src={`${process.env.PUBLIC_URL}/images/banner.jpg`}
+        className="banner"
+        alt="banner"
+      />
     </div>
   );
 };

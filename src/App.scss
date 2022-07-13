@@ -1,3 +1,76 @@
-.starter {
-  font-size: 18px;
+@import "mixins.scss";
+
+.catalog {
+  display: grid;
+  margin: 0 15px;
+  gap: 15px;
+
+  @include onTablet {
+    margin: 0 80px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.banner {
+  display: none;
+  @include onDesktop {
+    display: block;
+    grid-row-start: 5;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}
+
+.box-back {
+  display: none;
+  @include onDesktop {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    top: 300px;
+    left: 0;
+    transition: 0.3s;
+      &:hover {
+        background-color:#616161;
+        cursor: pointer;
+      .back {
+        opacity: 1;
+      }
+    }
+    .back {
+      opacity: 0.4;
+    }
+  }
+}
+
+.box-next {
+  display: none;
+  @include onDesktop {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    top: 300px;
+    right: 0;
+    transition: 0.3s;
+    &:hover {
+      background-color:#616161;
+      cursor: pointer;
+      .next {
+        opacity: 1;
+      }
+    }
+    .next {
+      opacity: 0.4;
+    }
+  }
 }
