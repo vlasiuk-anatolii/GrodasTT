@@ -176,6 +176,7 @@
 }
 
 .containerstar {
+  display: none;
   position: relative;
   z-index: 1;
 
@@ -200,6 +201,9 @@
     background-image: url('../icons/star-regular.svg');
     background-repeat: no-repeat;
     filter: drop-shadow(2px 2px 2px rgb(0, 0, 0)) invert(100%);
+  }
+  @include onDesktop {
+    display: block;
   }
 }
 
