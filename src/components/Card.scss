@@ -175,14 +175,31 @@
   }
 }
 
-.star {
-  display: none;
-  @include onDesktop {
-    display: block;
+.containerstar {
+  position: relative;
+  z-index: 1;
+
+  &__label {
     position: absolute;
-    top: 10px;
-    left:10px;
-    z-index: 1;
+  }
+  input {
+    display: none;
+  }
+
+  &__checkbox:checked + &__divcheck {
+    background-image: url('../icons/star-solid.svg');
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0)) invert(100%);
+  }
+  &__divcheck {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top:10px;
+    background-image: url('../icons/star-regular.svg');
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0)) invert(100%);
   }
 }
 
