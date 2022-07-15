@@ -1,11 +1,11 @@
-# Тестове завдання Frontend
+# Test Task Frontend
 - [DEMO LINK](https://vlasiuk-anatolii.github.io/GrodasTT/)
 
 ## Description
-Адаптивна верстка умовного сайту-каталогу зображень. Адаптив реалізований для мобільних девайсів від 280px до 679px від 680px до 959px для планшетів та від 960px для десктопів. Featured містить 5 елементів з найкращим рейтингом, Last містить 2 самих нових елементів. Реалізований скрипт моніторигу DOM дерева, у консолі виводиться інформація про загальну кількість елементів у DOM-дереві, згруповано елементи за назвою тегу, визначено кількість елементів для кожного тегу.
+Adaptive layout of the site-catalog of images. Adapted for mobile tablets from 280px to 679px from 680px to 959px for tablets and 960px for desktop. Featured contains 5 elements with the best rating, Last contains 2 new elements. The implemented DOM monitoring script of the tree, the console displays information about the total number of items in the DOM-tree, grouped items by the name of the tag, defined the number of items for each tag.
 
 ## Local development
-Для розробки було використано:
+The following were used for development:
 * ReactJS
 * JavaScript (ES6), Typescript
 * Technologies: HTML5, CSS3, SASS(SCSS), JSON, (Fetch, REST API if real project)
