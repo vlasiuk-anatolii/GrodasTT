@@ -24,7 +24,7 @@ export const App: React.FC = () => {
       </div>
       <Card pictures={data} />
       <img
-        src={`${process.env.PUBLIC_URL}/images/banner.jpg`}
+        src="/images/banner.jpg"
         className="banner"
         alt="banner"
       />

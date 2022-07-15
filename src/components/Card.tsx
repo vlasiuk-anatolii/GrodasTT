@@ -34,7 +34,7 @@ export const Card: React.FC<Props> = ({ pictures }) => {
             </label>
           </div>
           <img
-            src={`${process.env.PUBLIC_URL}${picture.image}`}
+            src={`${picture.image}`}
             className="card-img"
             alt={picture.title}
           />
@@ -71,7 +71,7 @@ export const Card: React.FC<Props> = ({ pictures }) => {
             </label>
           </div>
           <img
-            src={`${process.env.PUBLIC_URL}${picture.image}`}
+            src={`${picture.image}`}
             className="card-img"
             alt={picture.title}
           />
