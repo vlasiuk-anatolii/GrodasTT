@@ -24,7 +24,7 @@ export const App: React.FC = () => {
       </div>
       <Card pictures={data} />
       <img
-        src="/images/banner.jpg"
+        src="https://via.placeholder.com/540x900"
         className="banner"
         alt="banner"
       />
